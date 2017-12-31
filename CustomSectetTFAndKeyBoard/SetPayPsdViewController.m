@@ -41,6 +41,16 @@
     float w = 0;
     float h = 0;
     
+    x = kScreenW - CURSRCEENLENGTH(100);
+    y = CURSRCEENLENGTH(30);
+    w = CURSRCEENLENGTH(80);
+    h = CURSRCEENLENGTH(30);
+    UIButton *btn = KinitView(UIButton);
+    [btn setTitle:@"dismiss" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(actionBydismissBtn) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
     x = 0;
     y = CURSRCEENLENGTH(80);
     w = kScreenW;
@@ -89,7 +99,10 @@
         [self.tfArr addObject:tf];
     }
 }
-
+#pragma mark --- actions
+- (void)actionBydismissBtn{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 #pragma mark --- delegate
