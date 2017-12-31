@@ -16,6 +16,9 @@
 		DB97C52C1F77C3B100ED61C5 /* WithdrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB97C5281F77C3B100ED61C5 /* WithdrawView.m */; };
 		DB97C52D1F77C3B100ED61C5 /* SecretTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DB97C52A1F77C3B100ED61C5 /* SecretTextField.m */; };
 		DB97C52E1F77C3B100ED61C5 /* CustomKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = DB97C52B1F77C3B100ED61C5 /* CustomKeyBoard.m */; };
+		DBC8D35F1FF8DC4400B690ED /* SetPayPsdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC8D35E1FF8DC4400B690ED /* SetPayPsdViewController.m */; };
+		DBC8D3621FF8DD5D00B690ED /* PayPasswordInputTF.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC8D3611FF8DD5D00B690ED /* PayPasswordInputTF.m */; };
+		DBC8D3651FF8DE8700B690ED /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC8D3641FF8DE8700B690ED /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,12 @@
 		DB97C5291F77C3B100ED61C5 /* CustomKeyBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomKeyBoard.h; sourceTree = "<group>"; };
 		DB97C52A1F77C3B100ED61C5 /* SecretTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretTextField.m; sourceTree = "<group>"; };
 		DB97C52B1F77C3B100ED61C5 /* CustomKeyBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomKeyBoard.m; sourceTree = "<group>"; };
+		DBC8D35D1FF8DC4400B690ED /* SetPayPsdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetPayPsdViewController.h; sourceTree = "<group>"; };
+		DBC8D35E1FF8DC4400B690ED /* SetPayPsdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetPayPsdViewController.m; sourceTree = "<group>"; };
+		DBC8D3601FF8DD5D00B690ED /* PayPasswordInputTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPasswordInputTF.h; sourceTree = "<group>"; };
+		DBC8D3611FF8DD5D00B690ED /* PayPasswordInputTF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayPasswordInputTF.m; sourceTree = "<group>"; };
+		DBC8D3631FF8DE8700B690ED /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		DBC8D3641FF8DE8700B690ED /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +86,12 @@
 				DB97C5281F77C3B100ED61C5 /* WithdrawView.m */,
 				DB97C5131F77C38C00ED61C5 /* ViewController.h */,
 				DB97C5141F77C38C00ED61C5 /* ViewController.m */,
+				DBC8D35D1FF8DC4400B690ED /* SetPayPsdViewController.h */,
+				DBC8D35E1FF8DC4400B690ED /* SetPayPsdViewController.m */,
+				DBC8D3601FF8DD5D00B690ED /* PayPasswordInputTF.h */,
+				DBC8D3611FF8DD5D00B690ED /* PayPasswordInputTF.m */,
+				DBC8D3631FF8DE8700B690ED /* UIView+Extension.h */,
+				DBC8D3641FF8DE8700B690ED /* UIView+Extension.m */,
 				DB97C5161F77C38C00ED61C5 /* Main.storyboard */,
 				DB97C5191F77C38C00ED61C5 /* Assets.xcassets */,
 				DB97C51B1F77C38C00ED61C5 /* LaunchScreen.storyboard */,
@@ -157,12 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC8D3651FF8DE8700B690ED /* UIView+Extension.m in Sources */,
 				DB97C5151F77C38C00ED61C5 /* ViewController.m in Sources */,
 				DB97C5201F77C38C00ED61C5 /* main.m in Sources */,
 				DB97C52C1F77C3B100ED61C5 /* WithdrawView.m in Sources */,
 				DB97C5121F77C38C00ED61C5 /* AppDelegate.m in Sources */,
 				DB97C52D1F77C3B100ED61C5 /* SecretTextField.m in Sources */,
 				DB97C52E1F77C3B100ED61C5 /* CustomKeyBoard.m in Sources */,
+				DBC8D3621FF8DD5D00B690ED /* PayPasswordInputTF.m in Sources */,
+				DBC8D35F1FF8DC4400B690ED /* SetPayPsdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

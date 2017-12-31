@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "CustomKeyBoard.h"
 #import "WithdrawView.h"
-
+#import "SetPayPsdViewController.h"
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
 #define kWindow  [[UIApplication sharedApplication].delegate window]
@@ -38,7 +38,22 @@ static NSTimeInterval const kTransformPart2AnimationDuration = 0.4;
     [withDrawBtn setTitle:@"提现" forState:UIControlStateNormal];
     [withDrawBtn addTarget:self action:@selector(onWithDrawBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:withDrawBtn];
+    
+    UIButton *nextVCBtn = [[UIButton alloc]initWithFrame:CGRectMake(kScreenW - 100, 80, 60, 40)];
+    [nextVCBtn setTitle:@"next" forState:UIControlStateNormal];
+    [nextVCBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [nextVCBtn addTarget:self action:@selector(actionByNextBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:nextVCBtn];
+    
 }
+
+#pragma mark --- actions
+- (void)actionByNextBtnClick{
+    
+    SetPayPsdViewController *vc = [[SetPayPsdViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 // 键盘数字点击 响应代理回调
 - (void)customKeyBoardDelegateWithNumBtn:(UIButton *)btn{
     NSLog(@"keyBoardNum=%@",btn.currentTitle);
